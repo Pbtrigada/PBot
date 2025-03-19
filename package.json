@@ -1,0 +1,37 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@tonclient/core": "^1.30.0",
+    "amqp-connection-manager": "^4.1.14",
+    "amqplib": "^0.10.4",
+    "axios": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.19.1",
+    "inversify": "^6.0.2",
+    "inversify-express-utils": "^6.4.6",
+    "reflect-metadata": "^0.2.2",
+    "telegraf": "^4.16.3",
+    "telegraf-ratelimit": "^2.0.0",
+    "tonweb": "^0.0.66",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
