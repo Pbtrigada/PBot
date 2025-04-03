@@ -4,7 +4,7 @@ import {
     validate as uuidValidate,
     version as uuidVersion,
   } from 'uuid';
-import { ITonService } from "../../application";
+import { ITonService } from "@app";
 import { ApproveCompleteQueueService, PaymentQueueService } from "../rabbitMQ" 
 import { TransactionTo } from "@domain";
 
@@ -77,12 +77,6 @@ export class TonService implements ITonService {
 
     private async getTransactions(time, offsetTransactionLT, offsetTransactionHash, retryCount : number) {
         const COUNT = 50;
-      
-        // if (offsetTransactionLT) {
-        //   console.log(`Get ${COUNT} transactions before transaction ${offsetTransactionLT}:${offsetTransactionHash}`);
-        // } else {
-        //   console.log(`Get last ${COUNT} transactions`);
-        // }
       
         let transactions;
         try {
